@@ -1,0 +1,25 @@
+[project]
+name = "game-ab-retention"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nguyen Trong Thang", email = "thangnt20298@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "duckdb>=1.4.5",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "pandas>=2.3.3",
+    "scipy>=1.13.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+game-ab-retention = "game_ab_retention:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
